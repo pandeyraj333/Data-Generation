@@ -1,0 +1,29 @@
+# Core async and communication
+asyncio  # built-in, no need to install
+mcp  # assuming this is installable via pip or a local module
+
+# Langchain + OpenAI support
+langchain>=0.1.14
+langchain-openai>=0.1.3
+
+# LangGraph (for ReAct agent)
+langgraph>=0.0.20
+
+# MCP tooling adapter for LangChain
+langchain-mcp-adapters  # assuming pip-installable or custom module
+
+# OpenAI (if using ChatOpenAI model)
+openai>=1.14.0
+
+# Web server interface (FastMCP)
+fastapi>=0.110.0
+uvicorn>=0.29.0
+httpx>=0.27.0
+
+# Fake data generation
+faker>=19.6.2
+
+# Utility
+python-dotenv>=1.0.1
+tqdm>=4.66.2
+typing-extensions>=4.10.0
