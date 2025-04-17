@@ -12,10 +12,12 @@ from langgraph.prebuilt import create_react_agent
 from langchain_openai import ChatOpenAI
 
 # Set your OpenAI API Key securely (move to .env or secrets in production)
-os.environ['OPENAI_API_KEY'] = 'sk-proj-...'
+from dotenv import load_dotenv
+load_dotenv()
+api_key = os.getenv("OPENAI_API_KEY")
 
 # Setup model
-model = ChatOpenAI(model="gpt-4o")
+model = ChatOpenAI(model="gpt-4o",api_key = api_key)
 
 # Server parameters for stdio connection
 server_params = StdioServerParameters(
