@@ -27,3 +27,4 @@ faker
 python-dotenv
 tqdm
 typing-extensions
+nest_asyncio
