@@ -74,7 +74,7 @@ def run_generate_data_server():
 
             data.append(row)
             # Write to CSV
-        with open("D:\Work\Diacto\Dummy_data_generation_agent\generated_data.csv", mode='w', newline='', encoding='utf-8') as file:
+        with open("generated_data.csv", mode='w', newline='', encoding='utf-8') as file:
             writer = csv.DictWriter(file, fieldnames=column_names)
             writer.writeheader()
             writer.writerows(data)
