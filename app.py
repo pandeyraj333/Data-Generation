@@ -98,7 +98,7 @@ async def run_client(prompt: str) -> str:
         args=["-u", __file__, "server"]
     )
 
-    async with stdio_client(server_params, process=server_process) as (read, write):
+    async with stdio_client(server_params) as (read, write):
         async with ClientSession(read, write) as session:
             await session.initialize()
             tools = await load_mcp_tools(session)
