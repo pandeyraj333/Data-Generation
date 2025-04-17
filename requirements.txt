@@ -1,6 +1,7 @@
 # Core async and communication
 asyncio  # built-in, no need to install
-mcp  # assuming this is installable via pip or a local module
+fast-mcp  # assuming this is installable via pip or a local module
+pydantic
 
 # Langchain + OpenAI support
 langchain>=0.1.14
